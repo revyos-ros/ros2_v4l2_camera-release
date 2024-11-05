@@ -1,0 +1,83 @@
+ros-humble-v4l2-camera (0.6.2-2bookworm) bookworm; urgency=high
+
+  * Don't re-queue buffer before getting the data
+  * Break out parameter handler into separate class, reducing unnecessary startup warnings.
+  * Add UYVY pixel format
+  * Contributors: Martin Fraunhofer, Sander G. van Dijk
+
+ -- Sander G. van Dijk <sgvandijk@gmail.com>  Mon, 01 May 2023 16:00:00 -0000
+
+ros-humble-v4l2-camera (0.6.0-2bookworm) bookworm; urgency=high
+
+  * Use cv_bridge to perform conversions
+  * Fix: Image topic should be image_raw, not raw_image, in README.md
+  * Fix: Properly declare camera_info_url parameter
+  * Contributors: Marcus M. Scheunemann, Sander G. van Dijk, ijnek
+
+ -- Sander G. van Dijk <sgvandijk@gmail.com>  Sat, 03 Sep 2022 16:00:00 -0000
+
+ros-humble-v4l2-camera (0.5.0-2bookworm) bookworm; urgency=high
+
+  * Add time_per_frame parameter to adjust frame rate
+  * Fix: use 64 bit integers to store control valueas and ranges
+  * Contributors: Marcus M. Scheunemann, Sander G. van Dijk
+
+ -- Sander G. van Dijk <sgvandijk@gmail.com>  Fri, 05 Aug 2022 16:00:00 -0000
+
+ros-humble-v4l2-camera (0.4.0-2bookworm) bookworm; urgency=high
+
+  * Read-only parameters as now properly marked as such
+  * Use C-style strings for logging macros to adapt to new formatting constraints
+    See: https://index.ros.org/doc/ros2/Releases/Release-Galactic-Geochelone/#change-in-rclcpp-s-logging-macros
+  * Add support monochrome cameras
+  * Contributors: Chris Lalancette, Sander G. van Dijk, nfry321
+
+ -- Sander G. van Dijk <sgvandijk@gmail.com>  Thu, 28 Jan 2021 16:00:00 -0000
+
+ros-humble-v4l2-camera (0.3.1-2bookworm) bookworm; urgency=high
+
+  * Handle non discrete frame sizes; fixes support for Raspberry Pi + Camera Module
+  * Contributors: Sander G. van Dijk
+
+ -- Sander G. van Dijk <sgvandijk@gmail.com>  Fri, 06 Nov 2020 16:00:00 -0000
+
+ros-humble-v4l2-camera (0.3.0-2bookworm) bookworm; urgency=high
+
+  * Publishing is done on private topics to enable remapping of the namespace
+  * CameraInfo is published in intra-process communication mode
+  * Added parameter descriptions
+  * Contributors: Christian Rauch, Marcus M. Scheunemann, Sander G. van Dijk
+
+ -- Sander G. van Dijk <sgvandijk@gmail.com>  Fri, 25 Sep 2020 16:00:00 -0000
+
+ros-humble-v4l2-camera (0.2.1-2bookworm) bookworm; urgency=high
+
+  * Hold reference to parameters callback handle
+  * Contributors: Jacob Perron
+
+ -- Sander G. van Dijk <sgvandijk@gmail.com>  Wed, 05 Aug 2020 16:00:00 -0000
+
+ros-humble-v4l2-camera (0.2.0-2bookworm) bookworm; urgency=high
+
+  * Set frame_id on published images, default to "camera"
+  * Output FOURCC code of available formats
+  * Add parameter for setting the pixel format
+    Default to using YUYV
+  * Contributors: Sander G. van Dijk
+
+ -- Sander G. van Dijk <sgvandijk@gmail.com>  Fri, 12 Jun 2020 16:00:00 -0000
+
+ros-humble-v4l2-camera (0.1.1-2bookworm) bookworm; urgency=high
+
+  * Add missing rclcpp_components build dependency
+  * Contributors: Sander G. van Dijk
+
+ -- Sander G. van Dijk <sgvandijk@gmail.com>  Sun, 11 Aug 2019 16:00:00 -0000
+
+ros-humble-v4l2-camera (0.1.0-2bookworm) bookworm; urgency=high
+
+
+
+ -- Sander G. van Dijk <sgvandijk@gmail.com>  Sat, 10 Aug 2019 16:00:00 -0000
+
+
