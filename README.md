@@ -1,3 +1,26 @@
+## v4l2_camera (humble) - 0.6.2-2
+
+The packages in the `v4l2_camera` repository were released into the `humble` distro by running `/home/z572/gits/revyos-ros/venv2/bin/bloom-release -r humble v4l2_camera --override-release-repository-push-url git@github.com:revyos-ros/ros2_v4l2_camera-release.git` on `Tue, 05 Nov 2024 06:52:22 -0000`
+
+The `v4l2_camera` package was released.
+
+Version of package(s) in repository `v4l2_camera`:
+
+- upstream repository: https://gitlab.com/boldhearts/ros2_v4l2_camera.git
+- release repository: https://github.com/revyos-ros/ros2_v4l2_camera-release.git
+- rosdistro version: `0.6.2-1`
+- old version: `0.6.2-1`
+- new version: `0.6.2-2`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## v4l2_camera (jazzy) - 0.7.1-1
 
 The packages in the `v4l2_camera` repository were released into the `jazzy` distro by running `/usr/bin/bloom-release v4l2_camera --track jazzy --rosdistro jazzy --new-track` on `Sun, 05 May 2024 10:18:13 -0000`
