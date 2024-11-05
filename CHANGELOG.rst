@@ -2,24 +2,12 @@
 Changelog for package v4l2_camera
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.7.1 (2024-04-30)
-------------------
-* Fix deprecated cv_bridge header
-* Avoid unnecessary memory operations by using std::vector::assign()
-* Add camera frame id to camera info message
-* Contributors: Błażej Sowa, Martin Fraunhofer, Muzhyk Belarus, Sander G. van Dijk
-
-0.7.0 (2023-05-01)
+0.6.2 (2023-05-02)
 ------------------
 * Don't re-queue buffer before getting the data
 * Break out parameter handler into separate class, reducing unnecessary startup warnings.
 * Add UYVY pixel format
 * Contributors: Martin Fraunhofer, Sander G. van Dijk
-
-0.6.1 (2022-10-08)
-------------------
-* Rename include to resolve deprecation warning.
-* Contributors: Sander G. van Dijk, Steven! Ragnarök
 
 0.6.0 (2022-09-04)
 ------------------

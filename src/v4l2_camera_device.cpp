@@ -209,7 +209,8 @@ Image::UniquePtr V4l2CameraDevice::capture()
 
   // Copy over buffer data
   auto const & buffer = buffers_[buf.index];
-  img->data.assign(buffer.start, buffer.start + cur_data_format_.imageByteSize);
+  img->data.resize(cur_data_format_.imageByteSize);
+  std::copy(buffer.start, buffer.start + img->data.size(), img->data.begin());
 
   // Requeue buffer to be reused for new captures
   if (-1 == ioctl(fd_, VIDIOC_QBUF, &buf)) {
